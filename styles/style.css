@@ -1,3 +1,153 @@
 body {
     background-color: gray;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: Montserrat;
+}
+
+h2 {
+    font-family: KaushanScript;
+}
+
+p {
+    color: #999999;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    font-family: Montserrat;
+    color: white;
+}
+
+header > div {
+    display: flex;
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header ul {
+    display: flex;
+}
+
+header h1 {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 30px;
+}
+
+header a {
+    font-size: 14px;
+    margin: 12px 30px;
+    text-transform: uppercase;
+    padding: 10px 0px;
+}
+
+header a:hover {
+    color: #fce38a;
+    border-bottom: 3px solid;
+}
+
+section {
+    text-align: center;
+}
+
+#welcome-s {
+    height: 100vh;
+    background-image: 
+    linear-gradient(to top, #fce38a93, #f38181d3), linear-gradient(to bottom, #fce38a8a, #fce38ac2);
+}
+
+.page-padding {
+    width: 60%;
+    padding: 0 20%;
+}
+
+.title-s {
+    text-align: center;
+}
+
+.bg-img img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.bg {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+}
+
+.full-w {
+    width: 100%;
+}
+
+.va-center {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translateY(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateY(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+.va-bottom {
+    position: absolute;
+    bottom: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-space {
+    justify-content: space-between;
+    width: calc(100% - 40%);
+}
+
+.flex-space>div {
+    width: 100%;
+    padding: 10px;
+}
+
+.some-padding {
+    padding: 10px;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: KaushanScript;
+    src: url(../assets/fonts/KaushanScript-Regular.ttf);
 }
