@@ -1,5 +1,5 @@
 body {
-    background-color: gray;
+    background-color: white;
     padding: 0;
     margin: 0;
     overflow-x: hidden;
@@ -12,6 +12,7 @@ a {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 h1 {
@@ -97,7 +98,6 @@ section {
     font-size: 25px;
 }
 
-
 #welcome-s .title-s {
     color: white;
 }
@@ -144,7 +144,15 @@ section {
 
 .page-padding {
     width: 60%;
-    padding: 0 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+    /* padding: unset 20%; */
+}
+
+.padding-section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding: 50px unset; */
 }
 
 .bg-img img {
@@ -180,6 +188,13 @@ section {
     bottom: 0;
 }
 
+.fit {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
 .flex {
     display: flex;
 }
@@ -198,6 +213,10 @@ section {
     padding: 10px;
 }
 
+.nest-y {
+    padding: 0 10%;
+}
+
 .title-s {
     text-align: center;
     color: #333333;
@@ -211,6 +230,8 @@ section {
 .title-s h1 {
     font-family: Montserrat-Bold;
     font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .title-s hr {
@@ -219,6 +240,28 @@ section {
     background-color: #f38181;
     margin: 40px 0;
     margin-left: calc(50% - 30px);
+}
+
+.white-text {
+    color: white;
+    text-transform: uppercase;
+}
+
+.white-text-u {
+    color: white;
+    text-transform: uppercase;
+}
+
+.dark-text {
+    color: black;
+}
+
+.dark-text p {
+    text-transform: uppercase;
+}
+
+.no-margin {
+    margin: 0;
 }
 
 .trans-btn {
@@ -231,6 +274,61 @@ section {
 .trans-btn:hover {
     background-color: white;
     color: rgba(0, 0, 0, 0.5);
+}
+
+.pop-hover {
+    position: relative;
+    text-align: center;
+}
+
+.pop-hover:hover {
+    -ms-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+    box-shadow: 10px 10px #95e1d3;
+    background-image: linear-gradient(to top, #fce38a, #f38181)
+}
+
+.pop-hover img {
+    vertical-align: bottom;
+}
+
+.pop-hover:hover div:first-child::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to top, #fce38ac7, #f38181cc);
+}
+
+.pop-hover div:last-child {
+    display: none;
+}
+
+.pop-hover:hover div:last-child {
+    display: block;
+}
+
+.abs-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box-em li {
+    background-color: #fce38a;
+    color: #f38181;
+}
+
+.box-em li:hover {
+    background-color: #f38181;
+    color: white;
+}
+
+.box-em li a i {
+    padding: 1em;
 }
 
 @font-face {
