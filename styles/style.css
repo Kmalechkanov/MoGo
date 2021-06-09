@@ -15,11 +15,15 @@ ul {
 }
 
 h1 {
-    font-family: Montserrat;
+    font-family: Montserrat-Bold;
 }
 
 h2 {
     font-family: KaushanScript;
+}
+
+hr {
+    border: 0;
 }
 
 p {
@@ -35,11 +39,12 @@ p {
 header {
     position: absolute;
     z-index: 1;
-    font-family: Montserrat;
+    font-family: Montserrat-Bold;
     color: white;
 }
 
-header > div {
+header>div {
+    padding-top: 20px;
     display: flex;
 }
 
@@ -53,7 +58,7 @@ header ul {
 
 header h1 {
     margin: 0;
-    font-family: Montserrat;
+    font-family: Montserrat-Bold;
     font-size: 30px;
 }
 
@@ -62,6 +67,7 @@ header a {
     margin: 12px 30px;
     text-transform: uppercase;
     padding: 10px 0px;
+    vertical-align: -webkit-baseline-middle;
 }
 
 header a:hover {
@@ -75,17 +81,70 @@ section {
 
 #welcome-s {
     height: 100vh;
-    background-image: 
-    linear-gradient(to top, #fce38a93, #f38181d3), linear-gradient(to bottom, #fce38a8a, #fce38ac2);
+    color: white;
+    text-transform: uppercase;
+    background-image: linear-gradient(to top, #fce38a93, #f38181e8), linear-gradient(to bottom, #fce38a8a, #fce38ac2);
+}
+
+#welcome-s p {
+    font-size: 18px;
+    color: white;
+    font-family: Montserrat;
+}
+
+#welcome-s p span {
+    font-family: 'Montserrat-Bold';
+    font-size: 25px;
+}
+
+
+#welcome-s .title-s {
+    color: white;
+}
+
+#welcome-s .title-s h2 {
+    font-size: 72px;
+    font-weight: normal;
+    text-transform: none;
+    margin: 0;
+}
+
+#welcome-s .title-s h1 {
+    font-size: 150px;
+    font-weight: bold;
+    line-height: 0.93;
+    margin: 20px 0 50px;
+}
+
+#welcome-s .title-s hr {
+    background-color: white;
+}
+
+#welcome-s progress[value] {
+    height: 3px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+#welcome-s progress::-webkit-progress-value {
+    background: #f38181;
+}
+
+#welcome-s progress::-webkit-progress-bar {
+    background: white;
+}
+
+.left-align {
+    text-align: left;
+}
+
+.unactive {
+    opacity: 0.5;
 }
 
 .page-padding {
     width: 60%;
     padding: 0 20%;
-}
-
-.title-s {
-    text-align: center;
 }
 
 .bg-img img {
@@ -106,7 +165,7 @@ section {
 
 .va-center {
     position: absolute;
-    top: 40%;
+    top: 20%;
     left: 50%;
     -webkit-transform: translateY(-50%);
     -webkit-transform: translateX(-50%);
@@ -119,9 +178,6 @@ section {
 .va-bottom {
     position: absolute;
     bottom: 0;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 
 .flex {
@@ -142,9 +198,49 @@ section {
     padding: 10px;
 }
 
+.title-s {
+    text-align: center;
+    color: #333333;
+}
+
+.title-s h2 {
+    font-family: KaushanScript;
+    font-size: 24px;
+}
+
+.title-s h1 {
+    font-family: Montserrat-Bold;
+    font-size: 30px;
+}
+
+.title-s hr {
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 40px 0;
+    margin-left: calc(50% - 30px);
+}
+
+.trans-btn {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 15px 30px;
+    border: solid 3px white;
+}
+
+.trans-btn:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url(../assets/fonts/Montserrat-Bold.ttf);
+}
+
 @font-face {
     font-family: Montserrat;
-    src: url(../assets/fonts/Montserrat-Bold.ttf);
+    src: url(../assets/fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
