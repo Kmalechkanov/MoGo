@@ -134,6 +134,34 @@ section {
     background: white;
 }
 
+#summary-s {
+    background-color: #95e1d3;
+    color: white;
+}
+
+#summary-s h1 {
+    font-size: 72px;
+    margin: 0;
+}
+
+#summary-s p {
+    font-size: 14px;
+    margin: 0;
+    font-family: Montserrat;
+}
+
+#summary-s .flex-space div {
+    padding: 30px 0;
+}
+
+#summary-s .flex-space div {
+    border-left: 1px solid #ffffff4d
+}
+
+#summary-s .flex-space div:last-child {
+    border-right: 1px solid #ffffff4d;
+}
+
 .left-align {
     text-align: left;
 }
@@ -242,13 +270,15 @@ section {
     margin-left: calc(50% - 30px);
 }
 
-.white-text {
+.white-text, .white-text-u {
     color: white;
-    text-transform: uppercase;
+}
+
+.white-text p, .white-text-u p {
+    color: white;
 }
 
 .white-text-u {
-    color: white;
     text-transform: uppercase;
 }
 
