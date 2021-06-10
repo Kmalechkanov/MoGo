@@ -137,8 +137,8 @@ section {
     background: white;
 }
 
-#welcome-s .flex-space {
-
+#welcome-s .bg-img img {
+    height: 100vh;
 }
 
 #summary-s {
@@ -191,11 +191,10 @@ section {
     margin: 30px;
 }
 
-#services-s td > div {
+#services-s td>div {
     flex-wrap: wrap;
     text-align: left;
 }
-
 
 #services-s tr {
     border-bottom: 1px solid #e5e5e5;
@@ -207,7 +206,26 @@ section {
     border: none;
 }
 
+#design-s {
+    height: 80vh;
+    position: relative;
+}
 
+#design-s .bg img {
+    height: 80vh;
+}
+
+#design-s > img:last-of-type {
+    transform: translate(100px,100px);
+}
+
+#design-s > img:first-of-type {
+    transform: translateX(-250px);
+}
+
+#design-s {
+    background-color: #ffffffd9;
+}
 
 .left-align {
     text-align: left;
@@ -231,12 +249,11 @@ section {
 }
 
 .bg-img img {
-    height: 100vh;
+    width: 100%;
     object-fit: cover;
 }
 
 .bg {
-    top: 0px;
     left: 0px;
     position: absolute;
     z-index: -1;
@@ -284,8 +301,7 @@ section {
     width: calc(100% - 40%);
 }
 
-.flex-space > div,
-.flex-space-abs > div {
+.flex-space>div, .flex-space-abs>div {
     width: 100%;
     padding: 10px;
 }
@@ -301,6 +317,11 @@ section {
 .title-s {
     text-align: center;
     color: #333333;
+}
+
+.title-s>div {
+    display: flex;
+    flex-flow: column-reverse;
 }
 
 .title-s h2 {
