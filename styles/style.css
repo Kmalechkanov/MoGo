@@ -233,13 +233,21 @@ section {
     width: 50%;
 }
 
-#quote-s {
+#quote-s-1 {
     background-color: #f8f8f8;
 }
 
-#quote-s img {
+#quote-s-1 img {
     padding: 45px 45px 45px 45px;
     border: solid 3px #95e1d3;
+}
+
+#quote-s-2 {
+    background-color: #f8f8f8;
+}
+
+#quote-s-2 img {
+    border-radius: 250px;
 }
 
 .foldable>div {
