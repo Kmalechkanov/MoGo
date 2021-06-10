@@ -16,7 +16,8 @@ ul {
 }
 
 h1 {
-    font-family: Montserrat-Bold;
+    font-family: Montserrat;
+    font-weight: bold;
 }
 
 h2 {
@@ -43,7 +44,8 @@ p {
 header {
     position: absolute;
     z-index: 1;
-    font-family: Montserrat-Bold;
+    font-family: Montserrat;
+    font-weight: bold;
     color: white;
 }
 
@@ -62,7 +64,8 @@ header ul {
 
 header h1 {
     margin: 0;
-    font-family: Montserrat-Bold;
+    font-family: Montserrat;
+    font-weight: bold;
     font-size: 30px;
 }
 
@@ -97,8 +100,9 @@ section {
 }
 
 #welcome-s p span {
-    font-family: 'Montserrat-Bold';
+    font-family: Montserrat;
     font-size: 25px;
+    font-weight: bold;
 }
 
 #welcome-s .title-s {
@@ -147,6 +151,7 @@ section {
 }
 
 #summary-s h1 {
+    font-family: Montserrat-Bold;
     font-size: 72px;
     margin: 0;
 }
@@ -154,18 +159,18 @@ section {
 #summary-s p {
     font-size: 14px;
     margin: 0;
-    font-family: Montserrat;
+    font-family: Montserrat-Bold;
 }
 
-#summary-s .flex-space-abs div {
-    padding: 30px 0;
+#summary-s .flex-space div {
+    padding: 80px 0px;
 }
 
-#summary-s .flex-space-abs div {
+#summary-s .flex-space div {
     border-left: 1px solid #ffffff4d
 }
 
-#summary-s .flex-space-abs div:last-child {
+#summary-s .flex-space div:last-child {
     border-right: 1px solid #ffffff4d;
 }
 
@@ -178,10 +183,6 @@ section {
     margin: 0;
     font-family: Montserrat;
     text-transform: uppercase;
-}
-
-#services-s p {
-    font-family: Roboto-Regular;
 }
 
 #services-s tr, #services-s td {
@@ -209,6 +210,7 @@ section {
 #design-s {
     height: 80vh;
     position: relative;
+    margin-bottom: 50px;
 }
 
 #design-s .bg img {
@@ -225,6 +227,45 @@ section {
 
 #design-s {
     background-color: #ffffffd9;
+}
+
+#what-we-do-s .flex > div  {
+    width: 50%;
+}
+
+.foldable > div {
+    padding: 0 10px 10px;
+}
+
+.foldable > div > div {
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+}
+
+.foldable .flex img {
+    height: 30px;
+    width: 30px;
+}
+
+.foldable h1 {
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+.foldable p {
+    font-size: 15px;
+    color: #999999;
+    font-family: Roboto;
+    font-style: italic;
+}
+
+.foldable .flex {
+    align-items: center;
+}
+
+.foldable .right-align {
+    text-align: right;
 }
 
 .left-align {
@@ -330,6 +371,7 @@ section {
 }
 
 .title-s h1 {
+    margin: 0;
     font-family: Montserrat-Bold;
     font-size: 30px;
     font-weight: bold;
@@ -451,6 +493,6 @@ section {
 }
 
 @font-face {
-    font-family: Roboto-Regular;
+    font-family: Roboto;
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
