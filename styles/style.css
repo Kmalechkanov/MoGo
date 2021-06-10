@@ -217,11 +217,11 @@ section {
     height: 80vh;
 }
 
-#design-s > img:last-of-type {
-    transform: translate(100px,100px);
+#design-s>img:last-of-type {
+    transform: translate(100px, 100px);
 }
 
-#design-s > img:first-of-type {
+#design-s>img:first-of-type {
     transform: translateX(-250px);
 }
 
@@ -229,15 +229,24 @@ section {
     background-color: #ffffffd9;
 }
 
-#what-we-do-s .flex > div  {
+#what-we-do-s .flex>div {
     width: 50%;
 }
 
-.foldable > div {
+#quote-s {
+    background-color: #f8f8f8;
+}
+
+#quote-s img {
+    padding: 45px 45px 45px 45px;
+    border: solid 3px #95e1d3;
+}
+
+.foldable>div {
     padding: 0 10px 10px;
 }
 
-.foldable > div > div {
+.foldable>div>div {
     border: 1px solid #e5e5e5;
     padding: 10px;
 }
@@ -475,6 +484,34 @@ section {
 
 .box-em li a i {
     padding: 1em;
+}
+
+.quote>* {
+    padding: 30px;
+}
+
+.quote>i {
+    align-self: center;
+}
+
+.quote p {
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: italic;
+    margin: 0;
+}
+
+.quote h4 {
+    font-family: KaushanScript;
+    font-size: 24px;
+    margin: 0;
+}
+
+.quote hr {
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 15px 0;
 }
 
 @font-face {
