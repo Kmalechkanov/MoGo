@@ -64,8 +64,7 @@ header ul {
 
 header h1 {
     margin: 0;
-    font-family: Montserrat;
-    font-weight: bold;
+    font-family: Montserrat-Bold;
     font-size: 30px;
 }
 
@@ -250,6 +249,15 @@ section {
     border-radius: 250px;
 }
 
+#logos-s {
+    background-color: #f8f8f8;
+}
+
+#logos-s img {
+    width: 10%;
+    /* width: 150px; */
+}
+
 .foldable>div {
     padding: 0 10px 10px;
 }
@@ -352,6 +360,7 @@ section {
 .flex-space {
     justify-content: space-between;
     width: 100%;
+    flex-wrap: wrap;
 }
 
 .flex-space-abs {
