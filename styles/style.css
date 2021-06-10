@@ -25,6 +25,9 @@ h2 {
 
 hr {
     border: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #e5e5e5;
 }
 
 p {
@@ -134,6 +137,10 @@ section {
     background: white;
 }
 
+#welcome-s .flex-space {
+
+}
+
 #summary-s {
     background-color: #95e1d3;
     color: white;
@@ -150,17 +157,57 @@ section {
     font-family: Montserrat;
 }
 
-#summary-s .flex-space div {
+#summary-s .flex-space-abs div {
     padding: 30px 0;
 }
 
-#summary-s .flex-space div {
+#summary-s .flex-space-abs div {
     border-left: 1px solid #ffffff4d
 }
 
-#summary-s .flex-space div:last-child {
+#summary-s .flex-space-abs div:last-child {
     border-right: 1px solid #ffffff4d;
 }
+
+#services-s img {
+    height: max-content;
+    padding: 5px;
+}
+
+#services-s h4 {
+    margin: 0;
+    font-family: Montserrat;
+    text-transform: uppercase;
+}
+
+#services-s p {
+    font-family: Roboto-Regular;
+}
+
+#services-s tr, #services-s td {
+    display: flex;
+    width: 100%;
+    text-align: left;
+    margin: 30px;
+}
+
+#services-s td > div {
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+
+#services-s tr {
+    border-bottom: 1px solid #e5e5e5;
+    width: 100%;
+    margin: 30px 0;
+}
+
+#services-s tr:last-child {
+    border: none;
+}
+
+
 
 .left-align {
     text-align: left;
@@ -229,10 +276,16 @@ section {
 
 .flex-space {
     justify-content: space-between;
+    width: 100%;
+}
+
+.flex-space-abs {
+    justify-content: space-between;
     width: calc(100% - 40%);
 }
 
-.flex-space>div {
+.flex-space > div,
+.flex-space-abs > div {
     width: 100%;
     padding: 10px;
 }
@@ -374,4 +427,9 @@ section {
 @font-face {
     font-family: KaushanScript;
     src: url(../assets/fonts/KaushanScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../assets/fonts/Roboto-Regular.ttf);
 }
