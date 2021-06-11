@@ -242,7 +242,7 @@ section {
 }
 
 #quote-s-2 {
-    background-color: #f8f8f8;
+    background-color: white;
 }
 
 #quote-s-2 img {
@@ -256,6 +256,40 @@ section {
 #logos-s img {
     width: 10%;
     /* width: 150px; */
+}
+
+#comments-s {
+    background-color: #ffffffd9;
+    height: 80vh;
+}
+
+#comments-s .bg img {
+    height: 80vh;
+}
+
+#comments-s h3 {
+    font-family: Montserrat;
+    font-size: 14px;
+    margin: 0;
+}
+
+#comments-s h4 {
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: #333333;
+}
+
+#comments-s .flex hr {
+    width: 60px;
+    height: 3px;
+    background-color: #f38181;
+    margin: 15px 0;
+}
+
+#comments-s .flex img {
+    border-radius: 250px;
 }
 
 .foldable>div {
@@ -548,8 +582,7 @@ section {
     box-shadow: none;
 }
 
-.grid div,
-.grid img {
+.grid div, .grid img {
     max-width: 100%;
     width: 100%;
     object-fit: cover;
