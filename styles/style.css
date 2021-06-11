@@ -360,7 +360,7 @@ section {
 .flex-space {
     justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .flex-space-abs {
@@ -394,6 +394,11 @@ section {
 .title-s h2 {
     font-family: KaushanScript;
     font-size: 24px;
+}
+
+.title-s h3 {
+    font-family: Montserrat;
+    font-size: 14px;
 }
 
 .title-s h1 {
@@ -529,6 +534,30 @@ section {
     height: 3px;
     background-color: #f38181;
     margin: 15px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: start;
+    justify-items: center;
+}
+
+.grid .pop-hover:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.grid div,
+.grid img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.grid div:nth-child(3) {
+    /* grid-column: span 2; */
+    grid-row: span 2;
 }
 
 @font-face {
