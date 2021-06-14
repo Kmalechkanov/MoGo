@@ -356,12 +356,17 @@ footer .box-em li a i {
 }
 
 #comments-s {
+    position: relative;
     background-color: #ffffffd9;
-    height: 80vh;
+    min-height: 80vh;
+    height: 100%;
 }
 
-#comments-s .bg img {
-    height: 80vh;
+#comments-s .bg {
+    min-height: 80vh;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 #comments-s h3 {
@@ -721,6 +726,7 @@ footer .box-em li a i {
 
 .pop-hover:hover div:last-child {
     display: block;
+    height: fit-content;
 }
 
 .abs-center {
@@ -927,5 +933,12 @@ footer .box-em li a i {
     }
     .slide>div {
         padding: 0;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    header.page-padding {
+        padding: 0 5%;
+        width: 90%;
     }
 }
