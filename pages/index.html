@@ -13,23 +13,40 @@
 <body>
     <header class="page-padding">
         <div>
-            <!-- logo -->
             <div class="some-padding">
-                <h1>MoGo</h1>
-                <!-- <img src="../assets/logo/mo-go.svg"> -->
+                <a href="#" class="nav-logo">MoGo</a>
             </div>
 
             <!-- nav -->
-            <nav>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
-                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+            <nav class="navbar some-padding">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+                    </li>
                 </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </div>
 
@@ -46,15 +63,15 @@
         <!-- center align -->
         <div class="va-center title-s">
             <div>
-                <h2>Creative Template</h2>
                 <h1>Welcome<br>to MoGo</h1>
+                <h2>Creative Template</h2>
             </div>
             <hr>
             <a href="#" class="trans-btn">Learn More</a>
         </div>
 
         <!-- bottom align -->
-        <div class="va-bottom flex flex-space-abs left-align">
+        <div class="va-bottom flex flex-space-abs left-align slide">
             <div>
                 <progress value="0.25" class="full-w"></progress>
                 <p>
@@ -345,21 +362,25 @@
     </section>
 
     <!-- quote-s -->
-    <section id="quote-s-1" class="quote page-padding padding-section left-align flex">
+    <section id="quote-s-1" class="quote page-padding padding-section left-align flex-t">
         <i class="fas fa-chevron-left"></i>
-        <div>
-            <img src="../assets/images/speech-4.png" srcset="../assets/images/speech-4@2x.png 2x,
-              ../assets/images/speech-4@3x.png 3x">
-        </div>
-        <div class="some-padding" style="position:relative;">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-            <!-- same as others hr -->
-            <div class="flex left-align va-bottom">
-                <hr>
-                <h4>
-                    Jon Doe
-                </h4>
+
+        <div class="flex">
+            <div>
+                <img src="../assets/images/speech-4.png" srcset="../assets/images/speech-4@2x.png 2x,
+                  ../assets/images/speech-4@3x.png 3x">
+            </div>
+            <div class="some-padding" style="position:relative;">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                <!-- same as others hr -->
+                <div class="flex left-align va-bottom">
+                    <hr>
+                    <h4>
+                        Jon Doe
+                    </h4>
+                </div>
             </div>
         </div>
         <i class="fas fa-chevron-right"></i>
@@ -460,7 +481,7 @@
     </section>
 
     <!-- our-work-s -->
-    <section>
+    <section id="our-work-s">
         <!-- center align -->
         <div class="title-s page-padding padding-section">
             <div>
@@ -551,19 +572,22 @@
     </section>
 
     <!-- quote-s -->
-    <section id="quote-s-2" class="quote page-padding padding-section left-align flex">
+    <section id="quote-s-2" class="quote page-padding padding-section left-align flex-t">
         <i class="fas fa-chevron-left"></i>
-        <div>
-            <img src="../assets/images/layer-36.jpg" srcset="../assets/images/layer-36@2x.jpg 2x,
-              ../assets/images/layer-36@3x.jpg 3x">
-        </div>
-        <div class="some-padding" style="position:relative;">
-            <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
-            <!-- same as others hr -->
-            <div class="flex left-align va-bottom">
-                <hr>
-                <h4>Joshua Earle</h4>
+        <div class="flex">
+            <div>
+                <img src="../assets/images/layer-36.jpg" srcset="../assets/images/layer-36@2x.jpg 2x,
+                  ../assets/images/layer-36@3x.jpg 3x">
+            </div>
+            <div class="some-padding" style="position:relative;">
+                <p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</p>
+                <!-- same as others hr -->
+                <div class="flex left-align va-bottom">
+                    <hr>
+                    <h4>Joshua Earle</h4>
+                </div>
             </div>
         </div>
         <i class="fas fa-chevron-right"></i>
@@ -589,7 +613,7 @@
             <!-- flex -->
             <div class="flex">
                 <!-- 50% -->
-                <div class="flex">
+                <div class="flex flex-t">
                     <div>
                         <img src="../assets/images/layer-47.jpg" srcset="../assets/images/layer-47@2x.jpg 2x,
              ../assets/images/layer-47@3x.jpg 3x">
@@ -604,7 +628,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex">
+                <div class="flex flex-t">
                     <div>
                         <img src="../assets/images/layer-49.jpg" srcset="../assets/images/layer-49@2x.jpg 2x,
              ../assets/images/layer-49@3x.jpg 3x">
@@ -621,7 +645,7 @@
                 </div>
             </div>
             <div class="flex">
-                <div class="flex">
+                <div class="flex flex-t">
                     <div>
                         <img src="../assets/images/layer-50.jpg" srcset="../assets/images/layer-50@2x.jpg 2x,
                  ../assets/images/layer-50@3x.jpg 3x">
@@ -637,7 +661,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="flex">
+                <div class="flex flex-t">
                     <div>
                         <img src="../assets/images/layer-51.jpg" srcset="../assets/images/layer-51@2x.jpg 2x,
              ../assets/images/layer-51@3x.jpg 3x">
@@ -670,80 +694,94 @@
 
         <!-- 33% -->
         <div class="flex flex-space full-w left-align">
-            <div>
+            <a href="#blog-s" target="__blank">
                 <div>
-                    <img src="../assets/images/layer-54.jpg" srcset="../assets/images/layer-54@2x.jpg 2x,
-                    ../assets/images/layer-54@3x.jpg 3x">
-                    <div class="overway">
-                        <h2>15</h2>
-                        <p>Jan</p>
+                    <div>
+                        <img src="../assets/images/layer-54.jpg" srcset="../assets/images/layer-54@2x.jpg 2x,
+                        ../assets/images/layer-54@3x.jpg 3x">
+                        <div class="overway">
+                            <h2>15</h2>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <hr>
+                    <div class="va-bottom">
+                        <i class="fas fa-eye"></i>
+                        <span>542</span>
+                        <i class="fas fa-comment-dots"></i>
+                        <span>17</span>
                     </div>
                 </div>
-                <h4>Lorem ipsum dolor sit amet</h4>
-                <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <hr>
-                <div class="va-bottom">
-                    <i class="fas fa-eye"></i>
-                    <span>542</span>
-                    <i class="fas fa-comment-dots"></i>
-                    <span>17</span>
-                </div>
-            </div>
+            </a>
 
-            <div>
+            <a href="#blog-s" target="__blank">
                 <div>
-                    <img src="../assets/images/layer-55.jpg" srcset="../assets/images/layer-55@2x.jpg 2x,
+                    <div>
+                        <img src="../assets/images/layer-55.jpg" srcset="../assets/images/layer-55@2x.jpg 2x,
                     ../assets/images/layer-55@3x.jpg 3x">
-                    <div class="overway">
-                        <h2>14</h2>
-                        <p>Jan</p>
+                        <div class="overway">
+                            <h2>14</h2>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                    <h4>sed do eiusmod tempor</h4>
+                    <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <hr>
+                    <div class="va-bottom">
+                        <i class="fas fa-eye"></i>
+                        <span>992</span>
+                        <i class="fas fa-comment-dots"></i>
+                        <span>42</span>
                     </div>
                 </div>
-                <h4>sed do eiusmod tempor</h4>
-                <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <hr>
-                <div class="va-bottom">
-                    <i class="fas fa-eye"></i>
-                    <span>992</span>
-                    <i class="fas fa-comment-dots"></i>
-                    <span>42</span>
-                </div>
-            </div>
+            </a>
 
-            <div>
+            <a href="#blog-s" target="__blank">
                 <div>
-                    <img src="../assets/images/layer-57.jpg" srcset="../assets/images/layer-57@2x.jpg 2x,
+                    <div>
+                        <img src="../assets/images/layer-57.jpg" srcset="../assets/images/layer-57@2x.jpg 2x,
                     ../assets/images/layer-57@3x.jpg 3x">
-                    <div class="overway">
-                        <h2>12</h2>
-                        <p>Jan</p>
+                        <div class="overway">
+                            <h2>12</h2>
+                            <p>Jan</p>
+                        </div>
+                    </div>
+                    <h4>incididunt ut labore et dolore</h4>
+                    <p>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <hr>
+                    <div class="va-bottom">
+                        <i class="fas fa-eye"></i>
+                        <span>1560</span>
+                        <i class="fas fa-comment-dots"></i>
+                        <span>98</span>
                     </div>
                 </div>
-                <h4>incididunt ut labore et dolore</h4>
-                <p>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <hr>
-                <div class="va-bottom">
-                    <i class="fas fa-eye"></i>
-                    <span>1560</span>
-                    <i class="fas fa-comment-dots"></i>
-                    <span>98</span>
-                </div>
-            </div>
+            </a>
         </div>
     </section>
 
     <!-- map-s -->
-    <section>
-        <!-- width 100% -->
-        <div>
-            <i></i>
-            <h2>Open map</h2>
-            <hr>
-        </div>
+    <section id="map-s">
+        <a href="#map-s" target="__blank">
+            <div class="page-padding padding-section">
+                <div class="bg bg-img full-w">
+                    <img src="../assets/images/layer-59.jpg" srcset="../assets/images/layer-59@2x.jpg 2x,
+                 ../assets/images/layer-59@3x.jpg 3x">
+                </div>
+                <div class="va-center">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h2>Open map</h2>
+                    <hr>
+                </div>
+            </div>
+        </a>
     </section>
 
-    <footer>
-        <div>
+    <footer class="page-padding padding-section">
+        <div class="flex">
             <!-- 40% -->
             <div>
                 <h1>MoGo</h1>
@@ -753,50 +791,66 @@
                     aliquip
                     ex ea commodo consequat.
                 </p>
-                <p>
-                    <b>15k</b> followers
-                </p>
-
-                <hr>
-
                 <div>
-                    <p>Follow Us:</p>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-dribbble"></i></a>
-                    <a href="#"><i class="fab fa-tumblr"></i></a>
-                </div>
+                    <p>
+                        <b>15k</b> followers
+                    </p>
+                    <hr>
 
-                <form action="post">
-                    <input type="text" placeholder="Your Email...">
-                    <input type="button" value="Subscribe">
-                </form>
+                    <ul class="flex box-em">
+                        <p>Follow Us:</p>
+                        <li> <a href="#"><i class="fab fa-facebook-f"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-instagram"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-pinterest-p"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-google-plus-g"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-youtube"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-dribbble"></i></a> </li>
+                        <li> <a href="#"><i class="fab fa-tumblr"></i></a> </li>
+                    </ul>
+
+                    <form action="post" class="flex">
+                        <input type="text" placeholder="Your Email...">
+                        <input type="button" value="Subscribe">
+                    </form>
+                </div>
             </div>
 
             <!-- 30% -->
             <div>
                 <h3>blogs</h3>
-                <div>
-                    <img src="" alt="">
-                    <h4>Lorem ipsum dolor sit amet,
-                        consectetur adipiscing</h4>
-                    <p>Jan 9, 2016</p>
+                <div class="flex some-padding">
+                    <div>
+                        <img src="../assets/images/photos-7884-r-h-ds-w-8-yqbsy-n.jpg" srcset="../assets/images/photos-7884-r-h-ds-w-8-yqbsy-n@2x.jpg 2x,
+             ../assets/images/photos-7884-r-h-ds-w-8-yqbsy-n@3x.jpg 3x">
+                    </div>
+                    <div class="some-padding">
+                        <h4>Lorem ipsum dolor sit amet,
+                            consectetur adipiscing</h4>
+                        <p>Jan 9, 2016</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h4>Consectetur adipiscing elit,
-                        sed do eiusmod tempor</h4>
-                    <p>Jan 9, 2016</p>
+                <div class="flex some-padding">
+                    <div>
+                        <img src="../assets/images/photos-7884-lej-lfh-9-mn-8-ic.jpg" srcset="../assets/images/photos-7884-lej-lfh-9-mn-8-ic@2x.jpg 2x,
+             ../assets/images/photos-7884-lej-lfh-9-mn-8-ic@3x.jpg 3x">
+                    </div>
+                    <div class="some-padding">
+                        <h4>Consectetur adipiscing elit,
+                            sed do eiusmod tempor</h4>
+                        <p>Jan 9, 2016</p>
+                    </div>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <h4>sed do eiusmod tempor
-                        incididunt ut labore</h4>
-                    <p>Jan 9, 2016</p>
+                <div class="flex some-padding">
+                    <div>
+                        <img src="../assets/images/photos-7884-p-2-smgics-z-fyn.jpg" srcset="../assets/images/photos-7884-p-2-smgics-z-fyn@2x.jpg 2x,
+             ../assets/images/photos-7884-p-2-smgics-z-fyn@3x.jpg 3x">
+                    </div>
+                    <div class="some-padding">
+                        <h4>sed do eiusmod tempor
+                            incididunt ut labore</h4>
+                        <p>Jan 9, 2016</p>
+                    </div>
                 </div>
             </div>
 
@@ -804,24 +858,49 @@
             <div>
                 <h3>instagram</h3>
 
-                <!-- width 33% -->
-                <div>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
+                <div class="grid white-text-u">
+                    <div>
+                        <img src="../assets/images/photos-7884-mje-3-abujpto-1.jpg" srcset="../assets/images/photos-7884-mje-3-abujpto-1@2x.jpg 2x,
+             ../assets/images/photos-7884-mje-3-abujpto-1@3x.jpg 3x">
+                    </div>
+                    <div>
+                        <img src="../assets/images/photos-7884-m-bqau-4-dk-se-9-k.jpg" srcset="../assets/images/photos-7884-m-bqau-4-dk-se-9-k@2x.jpg 2x,
+             ../assets/images/photos-7884-m-bqau-4-dk-se-9-k@3x.jpg 3x">
+                    </div>
+                    <div>
+                        <img src="../assets/images/photos-7884-m-86-ovdhbi-w-ki.jpg" srcset="../assets/images/photos-7884-m-86-ovdhbi-w-ki@2x.jpg 2x,
+             ../assets/images/photos-7884-m-86-ovdhbi-w-ki@3x.jpg 3x">
+                    </div>
+                    <div>
+                        <img src="../assets/images/photos-7884-r-rdz-n-wx-35-x-gc.jpg" srcset="../assets/images/photos-7884-r-rdz-n-wx-35-x-gc@2x.jpg 2x,
+             ../assets/images/photos-7884-r-rdz-n-wx-35-x-gc@3x.jpg 3x">
+                    </div>
+                    <div>
+                        <img src="../assets/images/photos-7884-w-4-hb-ogf-c-6-w-db.jpg" srcset="../assets/images/photos-7884-w-4-hb-ogf-c-6-w-db@2x.jpg 2x,
+             ../assets/images/photos-7884-w-4-hb-ogf-c-6-w-db@3x.jpg 3x">
+                    </div>
+                    <div>
+                        <img src="../assets/images/photos-7884-qn-jlwa-l-4-ta-8-x.jpg" srcset="../assets/images/photos-7884-qn-jlwa-l-4-ta-8-x@2x.jpg 2x,
+             ../assets/images/photos-7884-qn-jlwa-l-4-ta-8-x@3x.jpg 3x">
+                    </div>
+                    <div>
+                        <img src="../assets/images/photos-78841-zc-s-1-o-l-cj-br-4.jpg" srcset="../assets/images/photos-78841-zc-s-1-o-l-cj-br-4@2x.jpg 2x,
+             ../assets/images/photos-78841-zc-s-1-o-l-cj-br-4@3x.jpg 3x">
+                    </div>
+                    <div>
+                        <img src="../assets/images/photos-78842-f-go-mmtu-d-5-z-9.jpg" srcset="../assets/images/photos-78842-f-go-mmtu-d-5-z-9@2x.jpg 2x,
+             ../assets/images/photos-78842-f-go-mmtu-d-5-z-9@3x.jpg 3x">
+                    </div>
+                    <div>
+                        <img src="../assets/images/photos-7884-nw-l-7-ruku-3-rh-j.jpg" srcset="../assets/images/photos-7884-nw-l-7-ruku-3-rh-j@2x.jpg 2x,
+             ../assets/images/photos-7884-nw-l-7-ruku-3-rh-j@3x.jpg 3x">
+                    </div>
                 </div>
-
                 <p>View more photos</p>
             </div>
         </div>
         <hr>
-        <p>&copy; 2016 MoGo free PSD template by Laaqiq</p>
+        <p>&copy; 2016 MoGo free PSD template by <span>Laaqiq</span></p>
     </footer>
 </body>
 
