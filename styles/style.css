@@ -821,7 +821,7 @@ footer .box-em li a i {
 
 .content {
     height: auto;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .collapsible {

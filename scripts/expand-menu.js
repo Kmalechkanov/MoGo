@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load",function(){ 
     let foldable = document.getElementById("foldable-1")
     let height = foldable.parentNode.children[0].children[0].height
 
@@ -33,4 +33,4 @@ window.onload = function () {
             }
         })
     }
-}
+})

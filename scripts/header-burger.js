@@ -1,4 +1,4 @@
-window.onload = function () {
+window.addEventListener("load",function(){ 
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
 
@@ -29,4 +29,4 @@ window.onload = function () {
             header.classList.remove('fixed-header')
         }
     })
-}
+})
