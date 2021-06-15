@@ -52,11 +52,11 @@ header {
 .fixed-header {
     position: fixed;
     background-color: #f38181e8;
-    transition:  all 0.5s ease-out;
+    transition: all 0.5s ease-out;
 }
 
 header>div {
-    padding: 20px 0;
+    padding: 0;
     display: flex;
 }
 
@@ -329,6 +329,11 @@ footer .box-em li a i {
 
 #what-we-do-s .flex>div {
     width: 50%;
+}
+
+#what-we-do-s .flex > div > img {
+    height: 400px;
+    object-fit: cover;
 }
 
 #quote-s-1 {
@@ -812,6 +817,19 @@ footer .box-em li a i {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.content {
+    height: auto;
+    overflow: scroll;
+}
+
+.collapsible {
+    height: auto;
+}
+
+.section.collapsed {
+    max-height: 0;
 }
 
 @font-face {
