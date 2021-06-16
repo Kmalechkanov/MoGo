@@ -95,7 +95,6 @@ section {
     text-align: center;
 }
 
-
 footer.padding-section {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -582,7 +581,7 @@ footer .box-em li a i {
 }
 
 .title-s.unactive {
-    display:none;
+    display: none;
 }
 
 .unactive {
@@ -1024,4 +1023,22 @@ footer .box-em li a i {
         padding-right: 0;
         width: 100%;
     }
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #95e1d3;
+    border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #528f84;
 }
