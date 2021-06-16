@@ -15,6 +15,10 @@ ul {
     padding: 0;
 }
 
+.collapsable i, .quote i {
+    color: gray;
+}
+
 h1 {
     font-family: Montserrat;
     font-weight: bold;
@@ -89,6 +93,12 @@ header a:hover {
 
 section {
     text-align: center;
+}
+
+
+footer.padding-section {
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 footer>div>div {
@@ -571,6 +581,10 @@ footer .box-em li a i {
     text-align: left;
 }
 
+.title-s.unactive {
+    display:none;
+}
+
 .unactive {
     opacity: 0.5;
 }
@@ -887,16 +901,10 @@ footer .box-em li a i {
 
 @media screen and (max-width: 1000px) {
     .flex {
-        /* width: 100%; */
         flex-wrap: wrap;
-        /* overflow: hidden; */
-        /* margin: 0 -150px 0 -150px; */
     }
     .flex-t {
-        /* width: 100%; */
         flex-wrap: nowrap;
-        /* overflow: hidden; */
-        /* margin: 0 -150px 0 -150px; */
     }
     #what-we-do-s>.flex>div {
         width: 100%;
@@ -914,7 +922,7 @@ footer .box-em li a i {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 6rem;
+        top: 55px;
         flex-direction: column;
         width: 100%;
         height: 80vh;

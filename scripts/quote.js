@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
     let quotes = document.querySelectorAll('.quote')
 
-    const slideTimer = 5 * 1000 + 2
+    const slideTimer = 5 * 1000
     let interval = setInterval(slideQuote, slideTimer)
 
     quotes.forEach(quote => {
