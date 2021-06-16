@@ -327,11 +327,11 @@ footer .box-em li a i {
     background-color: #ffffffd9;
 }
 
-#what-we-do-s .flex>div {
+#what-we-do-s>.flex>div {
     width: 50%;
 }
 
-#what-we-do-s .flex > div > img {
+#what-we-do-s .flex>div>img {
     height: 400px;
     object-fit: cover;
 }
@@ -351,6 +351,7 @@ footer .box-em li a i {
 
 #quote-s-2 img {
     border-radius: 250px;
+    width: 200px;
 }
 
 #logos-s {
@@ -536,6 +537,15 @@ footer .box-em li a i {
     width: 30px;
 }
 
+.foldable i {
+    transition: all 0.2s ease-in;
+}
+
+.foldable i:hover {
+    color: #f38181;
+    font-size: 20px;
+}
+
 .foldable h1 {
     font-size: 14px;
     text-transform: uppercase;
@@ -563,6 +573,19 @@ footer .box-em li a i {
 
 .unactive {
     opacity: 0.5;
+}
+
+.quote .unactive {
+    display: none;
+}
+
+.quote i {
+    transition: all 0.5s ease-out;
+}
+
+.quote i:hover {
+    color: #f38181;
+    font-size: 30px;
 }
 
 .page-padding {
@@ -720,6 +743,7 @@ footer .box-em li a i {
 .pop-hover {
     position: relative;
     text-align: center;
+    transition: all 0.2s ease-in;
 }
 
 .pop-hover:hover {
@@ -822,10 +846,19 @@ footer .box-em li a i {
 .content {
     height: auto;
     overflow-y: scroll;
+    transition: all 1.5s;
+}
+
+.collapsible .arrow {
+    width: 100%;
 }
 
 .collapsible {
     height: auto;
+}
+
+.collapsible .arrow>i {
+    transition: all 1.5s;
 }
 
 .section.collapsed {
@@ -865,7 +898,7 @@ footer .box-em li a i {
         /* overflow: hidden; */
         /* margin: 0 -150px 0 -150px; */
     }
-    #what-we-do-s .flex>div {
+    #what-we-do-s>.flex>div {
         width: 100%;
     }
     footer>div>div, footer>div>div:first-child, footer>div>div:last-child {
