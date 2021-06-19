@@ -23,15 +23,31 @@ window.addEventListener("load", function () {
 
                 if (!children[1].classList.contains('unactive') && way == -1
                     || !children[childCount - 2].classList.contains('unactive') && way == +1) {
-                    !children[childCount - 2].classList.toggle('unactive')
                     children[1].classList.toggle('unactive')
+                    children[childCount - 2].classList.toggle('unactive')
+
+                    children[childCount - 2].classList.add('fadein')
+                    children[1].classList.add('fadein')
+
+                    setTimeout(function () {
+                        children[childCount - 2].classList.remove('fadein')
+                        children[1].classList.remove('fadein')
+                    }, 2000);
                     return
                 }
                 for (let i = 1; i < childCount - 1; i++) {
                     if (!children[i].classList.contains('unactive')) {
                         children[i].classList.toggle('unactive')
                         children[i + way].classList.toggle('unactive')
+
+                        children[i + way].classList.add('fadein')
+                        setTimeout(function () {
+                            children[i + way].classList.remove('fadein')
+                        }, 2000);
                         return
+                    }
+                    else {
+                        children[i].classList.remove('fadein')
                     }
                 }
             }
@@ -44,7 +60,7 @@ window.addEventListener("load", function () {
     }
 
     function slideQuote() {
-        quotes.forEach(quote=> {
+        quotes.forEach(quote => {
             quote.lastElementChild.click()
         })
     }

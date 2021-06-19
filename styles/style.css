@@ -95,6 +95,10 @@ section {
     text-align: center;
 }
 
+footer {
+    background-color: #f8f8f8;
+}
+
 footer.padding-section {
     padding-top: 20px;
     padding-bottom: 10px;
@@ -153,7 +157,6 @@ footer input {
 
 footer input[type="text"] {
     width: 50%;
-    color: #e7e7e7;
     border: 1px solid #e7e7e7;
 }
 
@@ -166,6 +169,7 @@ footer input[type="button"] {
     background-color: #95e1d3;
     font-family: Montserrat-Bold;
     font-size: 14px;
+    padding: 12px 40px;
     color: white;
 }
 
@@ -733,8 +737,9 @@ footer .box-em li a i {
     color: black;
 }
 
-.dark-text p {
+.dark-text h4 {
     text-transform: uppercase;
+    font-family: Montserrat;
 }
 
 .no-margin {
@@ -864,6 +869,7 @@ footer .box-em li a i {
 
 .collapsible .arrow {
     width: 100%;
+    color: gray;
 }
 
 .collapsible {
@@ -876,6 +882,10 @@ footer .box-em li a i {
 
 .section.collapsed {
     max-height: 0;
+}
+
+.i {
+    font-style: italic;
 }
 
 @font-face {
@@ -1041,4 +1051,20 @@ footer .box-em li a i {
 
 ::-webkit-scrollbar-thumb:hover {
     background: #528f84;
+}
+
+.fadein {
+    position:relative;
+    animation: fadein 1.5s ease-out;
+}
+
+@keyframes fadein {
+    from {
+        left: -20px;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
 }
