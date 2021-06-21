@@ -32,7 +32,7 @@ window.addEventListener("load", function () {
                     setTimeout(function () {
                         children[childCount - 2].classList.remove('fadein')
                         children[1].classList.remove('fadein')
-                    }, 2000);
+                    }, 1500);
                     return
                 }
                 for (let i = 1; i < childCount - 1; i++) {
@@ -43,7 +43,7 @@ window.addEventListener("load", function () {
                         children[i + way].classList.add('fadein')
                         setTimeout(function () {
                             children[i + way].classList.remove('fadein')
-                        }, 2000);
+                        }, 1500);
                         return
                     }
                     else {

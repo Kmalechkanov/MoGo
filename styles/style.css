@@ -430,10 +430,20 @@ footer .box-em li a i {
 #blog-s a {
     width: 100%;
     padding: 10px;
+    position: relative;
+}
+
+#blog-s p:not(#blog-s .overway p) {
+    padding-bottom: 15px;
 }
 
 #blog-s div>div {
     position: relative;
+}
+
+#blog-s h4 {
+    text-transform: uppercase;
+    font-family: Montserrat;
 }
 
 #blog-s .overway {
@@ -1053,8 +1063,21 @@ footer .box-em li a i {
     background: #528f84;
 }
 
+#welcome-s .title-s {
+    animation: smoothin 1s forwards; 
+}
+
+@keyframes smoothin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .fadein {
-    position:relative;
+    position: relative;
     animation: fadein 1.5s ease-out;
 }
 
