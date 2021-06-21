@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: white;
     padding: 0;
@@ -421,6 +425,16 @@ footer .box-em li a i {
 
 #blog-s img {
     width: 100%;
+}
+
+#blog-s .va-bottom.full-w {
+    width: 100%;
+}
+
+#blog-s .va-bottom hr {
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
 }
 
 #blog-s i {
@@ -972,9 +986,6 @@ footer .box-em li a i {
     #summary-s .flex-space div:last-child {
         border: none;
     }
-    #design-s {
-        overflow-x: clip;
-    }
     #welcome-s .title-s h2 {
         font-size: 40px;
     }
@@ -1031,6 +1042,9 @@ footer .box-em li a i {
     .slide>div {
         padding: 0;
     }
+    #blog-s .va-bottom.full-w {
+        width: fit-content;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1064,7 +1078,7 @@ footer .box-em li a i {
 }
 
 #welcome-s .title-s {
-    animation: smoothin 1s forwards; 
+    animation: smoothin 1s forwards;
 }
 
 @keyframes smoothin {
