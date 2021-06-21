@@ -322,6 +322,8 @@ footer .box-em li a i {
     height: 80vh;
     position: relative;
     margin-bottom: 50px;
+    overflow-x: hidden;
+    background-color: #ffffffd9;
 }
 
 #design-s h1, #design-s h2 {
@@ -338,10 +340,6 @@ footer .box-em li a i {
 
 #design-s>img:first-of-type {
     transform: translateX(-250px);
-}
-
-#design-s {
-    background-color: #ffffffd9;
 }
 
 #what-we-do-s>.flex>div {
@@ -1056,6 +1054,12 @@ footer .box-em li a i {
         padding-left: 0;
         padding-right: 0;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #design-s {
+        overflow-y: hidden;
     }
 }
 
